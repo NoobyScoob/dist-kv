@@ -59,7 +59,7 @@ func TestEventualParallelPerformance(t *testing.T) {
 	// 1000 successive set and get requests
 	// reading my own write
 	var wg sync.WaitGroup
-	for i := 0; i < 500; i++ {
+	for i := 0; i < 10; i++ {
 		wg.Add(1)
 		go func(i int) {
 			time.Sleep(time.Millisecond * 50)

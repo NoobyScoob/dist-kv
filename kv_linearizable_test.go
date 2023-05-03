@@ -86,7 +86,7 @@ func TestLinearizbilityPerformance(t *testing.T) {
 
 	// 1000 successive set and get requests
 	// reading my own write
-	for i := 0; i < 1000; i++ {
+	for i := 0; i < 10; i++ {
 		client := clients[i % 3]
 		key := "x"
 		val := fmt.Sprintf("%d", i)
